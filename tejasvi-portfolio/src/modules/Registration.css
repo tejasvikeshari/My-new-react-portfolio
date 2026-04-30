@@ -1,0 +1,94 @@
+/* Full Page Wrapper */
+.reg-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 80vh;
+}
+
+/* Card Styling */
+.reg-main-card {
+  background: #0d1117;
+  border: 2px solid #0915bd;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 0 50px rgba(11, 206, 206, 0.15);
+  text-align: center;
+}
+
+.reg-main-card h2 { color: #fff; margin-bottom: 25px; font-size: 2rem; }
+
+/* Avatar Section */
+.avatar-section { display: flex; justify-content: center; margin-bottom: 30px; }
+.avatar-frame {
+  width: 100px;
+  height: 100px;
+  border: 2px dashed #054e70;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+}
+.avatar-frame img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+
+/* Grid for 2-Column inputs */
+.reg-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.reg-form-grid input, .custom-select {
+  background: #161b22;
+  border: 1px solid #30363d;
+  padding: 12px;
+  border-radius: 8px;
+  color: #fff;
+  width: 100%;
+}
+
+.reg-form-grid input:focus { border-color: #cccf12; outline: none; }
+
+/* Register Button */
+.final-reg-btn {
+  width: 100%;
+  padding: 15px;
+  background: #1480b3;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.final-reg-btn:hover { background: #18a80b; transform: scale(1.02); }
+
+/* SUCCESS TOAST - Ye "Done" ko fixed karega */
+.floating-success {
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #28a745; /* Success Green */
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  z-index: 10001;
+  animation: slideInDown 0.5s ease-out;
+}
+
+@keyframes slideInDown {
+  from { transform: translate(-50%, -100px); opacity: 0; }
+  to { transform: translate(-50%, 0); opacity: 1; }
+}

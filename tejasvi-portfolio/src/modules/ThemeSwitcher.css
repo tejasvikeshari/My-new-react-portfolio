@@ -1,0 +1,159 @@
+.atmosphere-overlay {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🟢 Side Background Highlight - Left Side */
+.atmosphere-side-glow {
+  position: absolute;
+  top: -100px;
+  left: -200px;
+  width: 400px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0) 70%);
+  filter: blur(80px); /* Blue Side Glow */
+  z-index: 1;
+}
+
+/* Card Container */
+.atmosphere-container {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.atmosphere-card {
+  background: #0d1117; /* Navy Black */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 50px;
+  border-radius: 40px;
+  width: 100%;
+  max-width: 580px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+
+/* 🟢 Top Icon Glow (Blue Circle) */
+.atmosphere-top-icon-wrapper {
+  background: rgba(59, 130, 246, 0.15); /* light blue bg */
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px auto;
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.4); /* Glow effect */
+}
+
+.atmosphere-top-icon {
+  color: #3b82f6; /* Icon color */
+  font-size: 1.8rem;
+}
+
+.atmosphere-header h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 10px 0;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.atmosphere-header p {
+  color: #8b949e; /* Faded grey */
+  font-size: 0.7rem;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Theme Buttons Grid - 2 per row */
+.atmosphere-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/* Common Theme Button Styles */
+.theme-btn {
+  border: none;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 12px 20px;
+  border-radius: 30px; /* Fully pill shape */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon style inside button */
+.theme-btn svg {
+  font-size: 1.1rem;
+}
+
+.theme-btn:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.1);
+}
+
+/* 🟢 Specific Theme Colors - Exact from screenshot */
+.neon-blue { background: #3b82f6; } /* Faded blue */
+.cyber-purple { background: #9333ea; }
+.sunset-red { background: #ef4444; }
+.emerald { background: #10b981; }
+.gold-night { background: #f59e0b; }
+.forest-edge { background: #166534; } /* Dark forest green */
+.deep-rose { background: #c2185b; }
+.oceanic { background: #0369a1; }
+.sky-light { background: #e5e7eb; color: #0d1117; } /* light grey bg */
+.sky-light svg { color: #0d1117; }
+
+/* Special Ghost White - Full Width */
+.special-button-row {
+  margin-bottom: 30px;
+}
+
+.ghost-white {
+  background: #fff;
+  color: #0d1117;
+  width: 100%;
+}
+.ghost-white svg { color: #0d1117; }
+
+/* Footer - "Return to Dashboard" link */
+.atmosphere-footer {
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 20px;
+}
+
+.back-link-atmosphere {
+  background: transparent;
+  border: none;
+  color: #4b5563; /* faded grey link */
+  font-size: 0.8rem;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+.back-link-atmosphere:hover {
+  color: #fff;
+}
+.atmosphere-overlay {
+  width: 100%;
+  min-height: 100vh;
+  transition: 0.5s ease; /* Smooth transition ke liye */
+  padding: 40px;
+}

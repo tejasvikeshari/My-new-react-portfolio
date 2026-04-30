@@ -1,0 +1,91 @@
+.calc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logic-calc-box {
+  background: #040307; /* Navy Blue shade from photo */
+  border: 2px solid #491303; /* Orange Border */
+  padding: 30px;
+  border-radius: 25px;
+  width: 380px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.screen-area {
+  background: #271e3b;
+  height: 110px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 25px;
+  margin-bottom: 25px;
+  border: 1px solid #334155;
+}
+
+.display-val {
+  color: #f59e0b; /* Orange result color */
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.buttons-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.buttons-layout button {
+  height: 60px;
+  border-radius: 12px;
+  border: none;
+  background: #464647;
+  color: #f8fafc;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.buttons-layout button:hover {
+  background: #334155;
+  filter: brightness(1.2);
+}
+
+/* Red AC Button */
+.red-ac {
+  background: #ef4444 !important;
+  color: white !important;
+}
+
+/* Blue Operators (sqrt, pi, brackets) */
+.blue-text {
+  color: #3b82f6 !important;
+}
+
+/* Orange Math Operators */
+.orange-text {
+  color: #f54d0b !important;
+  background: #1e293b !important;
+}
+
+/* Active Number (Highlight jaisa photo mein '5' par hai) */
+.active-num {
+  border: 1px solid #f59e0b !important;
+  background: #334155 !important;
+}
+
+/* Equal Button - Orange Wide */
+.equal-wide {
+  grid-column: span 2;
+  background: #f59e0b !important;
+  color: #0f172a !important;
+  font-size: 2rem !important;
+}
+
+.equal-wide:hover {
+  background: #fbbf24 !important;
+}

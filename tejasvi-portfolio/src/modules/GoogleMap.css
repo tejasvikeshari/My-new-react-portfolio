@@ -1,0 +1,96 @@
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.map-card {
+  background: #d40d0d;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  /* Red Glow Highlight */
+  box-shadow: 0 0 50px rgba(239, 68, 68, 0.2);
+  transition: 0.3s;
+}
+
+.map-card:hover {
+  box-shadow: 0 0 70px rgba(239, 68, 68, 0.3);
+}
+
+.map-header h2 { color: #fff; margin: 10px 0; }
+
+.search-box {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-box input {
+  background: #161b22;
+  border: 1px solid #30363d;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  width: 300px;
+}
+
+.search-btn {
+  background: #3b82f6;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.map-view {
+  height: 400px;
+  background: #161b22;
+  border-radius: 20px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #30363d;
+  color: #8b949e;
+}
+
+.return-btn {
+  background: none;
+  border: none;
+  color: #8b949e;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+.map-view {
+  height: 400px; /* Ye height confirm karein ki apply ho rahi hai */
+  width: 100%;
+  background: #161b22;
+  border-radius: 20px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #30363d;
+  overflow: hidden; /* Important for map rendering */
+}
+
+/* Red Glow Shadow (Highlight) */
+.map-card {
+  background: #0d1117;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 30px;
+  width: 800px;
+  margin: auto;
+  box-shadow: 0 0 50px rgba(239, 68, 68, 0.2); /* Red Shadow */
+}
+.return-btn:hover { color: #fff; }
